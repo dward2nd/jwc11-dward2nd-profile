@@ -3,5 +3,38 @@ body {
     height: 100%;
     background: url('../img/bg.png');
     background-size: cover;
-    font-family: Kanit, Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    padding: 10vh 0;
+}
+#toppro {
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.2em !important;
+    
+}
+#toppro .col-md-* {
+    height: 100vh;
+}
+#social {
+    height: 10vmin;
+    text-align: center;
+}
+#social img {
+    max-height: 64px;
+}
+#exp {
+    text-align: center;
+    background: #ffffff;
+}
+#exp * {
+    color: #222222;
+}
+#exp img {
+    max-height: 250px;
 }

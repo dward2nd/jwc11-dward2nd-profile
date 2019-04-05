@@ -5,14 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@dward2nd</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
 </head>
 <body>
-    
+    <div id="main">
+        <div class="container-fluid" id="toppro">
+            <div class="container">
+                <div class="row">
+                 <div class="col-md-6">
+                        <img src="img/avatar.jpg" style="max-width: 250px" alt="My avatar pic." class="img-fluid mx-auto d-block rounded-circle">
+                        <h3 class="text-center"><strong>Saksinkarn Petchkuljinda</strong></h3>
+                        <h4 class="text-center">( Website )</h4>
+                    </div>
+                    <div class="col-md-6" style="padding-top: 5vmin;">
+                        <h2>General Info</h2>
+                        <ul id="geninfo">
+                            <li>M.6 at YRC, Chiang Mai</li>
+                            <li>Birthday:   May 17, 2001</li>
+                            <li>E-mail:     dward.the.2nd@gmail.com</li>
+                            <li>Tel:        099-569-7271</li>
+                        </ul>
+                        <h2>Social</h2>
+                        <div class="row" id="social">
+                            <div class="col-4" v-for="plat in plats">
+                                <a :href="plat.link" target="_blank" data-toggle="tooltip" :title="plat.info">
+                                    <img class="rounded-circle img-responsive" :src="'img/logo/' + plat.name + '.png'" :alt="plat.name | capitalize">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="exp">
+            <h2 class="text-center">Experience</h2>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/exp/.jpg" alt="des">
+                        <h4>info</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tooltip.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
