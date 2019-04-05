@@ -4,6 +4,7 @@ body {
     background: url('../img/bg.png');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -11,12 +12,11 @@ body {
     box-sizing: border-box;
 }
 .container-fluid {
-    padding: 10vh 0;
+    padding: 10vh 0 10vh 0;
 }
 #toppro {
     background: rgba(0, 0, 0, 0.4);
     font-size: 1.2em !important;
-    
 }
 #toppro .col-md-* {
     height: 100vh;
@@ -36,5 +36,15 @@ body {
     color: #222222;
 }
 #exp img {
-    max-height: 250px;
+    /*height: 40vh;*/
+    height: 30vh;
+    width: 30vh;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 5vh;
+    
+}
+#skill {
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.4em;
 }

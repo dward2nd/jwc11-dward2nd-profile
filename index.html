@@ -42,20 +42,33 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
         <div class="container-fluid" id="exp">
-            <h2 class="text-center">Experience</h2>
+            <h2 class="text-center" style="padding-bottom: 5vh;">Experience</h2>
             <div class="container">
-
                 <div class="row">
-                    <div class="col-md-3">
-                        <img src="img/exp/.jpg" alt="des">
-                        <h4>info</h4>
+                    <div class="col-md-3" v-for="exp in exps">
+                        <img :src="'img/exp/'+ exp.name +'.jpg'" class="img-fluid rounded-circle" alt="exp.name">
+                        <p>{{ exp.info }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid" id="skill">
+        <div class="container">
+            <h2 class="text-center">Skill</h2>
+            <div class="row" v-for="skill in skills">
+                <div class="col-md-4">{{ skill.name }}</div>
+                <div class="col-md-8">
+                    <div class="progress" style="height: 30px;">
+                        <div class="progress-bar" :style="'width: '+skill.num+'%; background-color: '+skill.bg">{{ skill.num }} %</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
     <script src="js/tooltip.js"></script>
     <script src="js/index.js"></script>
 </body>
