@@ -9,7 +9,7 @@ body {
 * {
     font-family: 'Ubuntu', sans-serif;
     color: #e0e0e0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 .container-fluid {
     padding: 10vh 0 10vh 0;
